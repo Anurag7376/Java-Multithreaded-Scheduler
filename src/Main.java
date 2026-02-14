@@ -34,7 +34,7 @@ public class Main {
             "<html>" +
             "<head><title>Java Task Scheduler</title></head>" +
             "<body style='font-family: Arial;'>" +
-            "<h2>🚀 Multithreaded Task Scheduler is Running</h2>" +
+            "<h2> Multithreaded Task Scheduler is Running</h2>" +
             "<p><strong>Status:</strong> Healthy</p>" +
             "<p><strong>Queue Size:</strong> " + queueSize + "</p>" +
             "<p><strong>Completed Tasks:</strong> " + completed + "</p>" +
@@ -46,7 +46,6 @@ public class Main {
             "<li>GET /</li>" +
             "</ul>" +
             "<hr/>" +
-            "<p>Built with Core Java | ExecutorService | PriorityBlockingQueue</p>" +
             "</body>" +
             "</html>";
 
