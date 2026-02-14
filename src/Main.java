@@ -32,7 +32,42 @@ public class Main {
     int queueSize = scheduler.getQueueSize();
     long completed = scheduler.getCompletedTaskCount();
 
-    String response = """
+    String response =
+        "<!DOCTYPE html>" +
+        "<html>" +
+        "<head>" +
+        "<title>Java Multithreaded Task Scheduler</title>" +
+        "<style>" +
+        "body { font-family: Arial, sans-serif; background: #1e3c72; color: white; margin:0; padding:40px; }" +
+        ".container { max-width:800px; margin:auto; background: rgba(255,255,255,0.1); padding:30px; border-radius:10px; }" +
+        ".card { background: rgba(255,255,255,0.15); padding:20px; margin-bottom:20px; border-radius:8px; }" +
+        ".metric { font-size:20px; font-weight:bold; }" +
+        "code { background: rgba(0,0,0,0.3); padding:4px 8px; border-radius:4px; }" +
+        "</style>" +
+        "</head>" +
+        "<body>" +
+        "<div class='container'>" +
+        "<h1>Multithreaded Task Scheduler</h1>" +
+
+        "<div class='card'>" +
+        "<p>Status: <span class='metric'>Healthy</span></p>" +
+        "<p>Queue Size: <span class='metric'>" + queueSize + "</span></p>" +
+        "<p>Completed Tasks: <span class='metric'>" + completed + "</span></p>" +
+        "</div>" +
+
+        "<div class='card'>" +
+        "<h3>Available Endpoints</h3>" +
+        "<p><code>POST /submit?priority=5</code></p>" +
+        "<p><code>GET /metrics</code></p>" +
+        "<p><code>GET /</code></p>" +
+        "</div>" +
+
+        "<p>Built with Core Java | ExecutorService | PriorityBlockingQueue | Docker Deployment</p>" +
+
+        "</div>" +
+        "</body>" +
+        "</html>";
+
         <!DOCTYPE html>
         <html>
         <head>
